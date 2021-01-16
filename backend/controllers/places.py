@@ -352,8 +352,6 @@ def get_single_place_id(id):
   place = Place.query.filter(Place.place_id == id).first()
 
   if not place:
-
-    #  request from external API
     resp = requests.get(f'https://www.triposo.com/api/20201111/poi.json?id={id}&fields=id,name,coordinates,images,score,snippet,location_id,tag_labels&account={TRIPOSO_ACCOUNT}&token={TRIPOSO_API_KEY}')
 
     if not resp:

@@ -1,11 +1,18 @@
 
 ## ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) General Assembly, Software Engineering Immersive
 # Project #4: Travel Explorer
+
+<p align="center">
+  <img src="screenshots/1.png" alt="Home Page"/>
+</p>
+
 ## Overview 
-The final project at GA was to create a full-stack web application. This two-person, week-long project utilised a Python Flask RESTful API.
+The final project at GA was to create a full-stack web application with my partner [Theo Booth](https://github.com/theorlbooth). This two-person, week-long project utilised a Python Flask RESTful API. 
 TravelExplorer allows users to navigate the world, exploring new cities and find some new places and even suggest an itinerary for specified dates. User functionality allows the creation of travel wish-lists, and comments and reviews.
 The idea was born out of a mutual love for travel and frustration with the lack of user interaction with travel websites, specifically as a place to plan a trip! 
-You can find the project here.
+
+[Check it out here!](https://project-4-sean.herokuapp.com/)
+
 ## Technologies
 * React
 * Python
@@ -48,7 +55,7 @@ We used a mixture of ziteboard and googledocs to outline what we wanted to achie
 ![wireframe](screenshots/WF1.png)
 ![wireframe](screenshots/WF2.png)
 
-### FrontEnd
+### Front-End
 
 The layout of the application and the components required was planned during initial wireframing with some tweaks as the project progressed. These components allow for exploration and facilitate the user interaction that we were desiogning. These are components are: 
 
@@ -74,7 +81,7 @@ Styling was handled through a combination of Bulma and SCSS.
 
 
 
-### BackEnd
+### Back-End
 
 The design of our backend was centered around the user. The Triposo API has a large number of very specific endpoints that we made the decision not to seed all of the information, rather store the information in our backend as it was retrieved from the API during use e.g. no informaton about specific places was seeded but once this information is requested from the API by the frontend this is then stored for future use.
 
@@ -247,11 +254,12 @@ Along with comments we wanted users to be able to rate places. For this we used 
 	{comment.rating !== 0 && <ReactStars value={(comment.rating) / 2} count={5} size={16} activeColor="#ffd700" edit={false} isHalf={true} />}
 
 ## Screenshots
+![screenshot](screenshots/3.png)
+![screenshot](screenshots/5.png)
+![screenshot](screenshots/6.png)
 ![screenshot](screenshots/2.png)
-<img src="screenshots/1.png" alt="Home Page" width="49.5%"> <img src="screenshots/3.png" alt="Map" width="49.5%">
-<img src="screenshots/4.png" alt="Results" width="49.5%"> <img src="screenshots/5.png" alt="City" width="49.5%">
-<img src="screenshots/6.png" alt="Place" width="49.5%"> <img src="screenshots/7.png" alt="Profile" width="49.5%">
-![screenshot](screenshots/8.png)
+
+
 
 ## Challenges / Victories
 ### Creating & Adding to Folders 
@@ -349,15 +357,22 @@ This is something that we would have liked to have spent more time on as it is b
 	    self.passwordConfirmation_hash = bcrypt.generate_password_hash(passwordConfirmation_plaintext).decode('utf-8')
 	  def validate_passwordConfirmation(self, passwordConfirmation_plaintext):
 	    return bcrypt.check_passwordConfirmation_hash(self.passwordConfirmation_hash, passwordConfirmation_plaintext)
-
-<img src="screenshots/9.png" alt="Password Confirmation" width="25%"> 
+<p align=center>
+	<img src="screenshots/9.png" alt="Password Confirmation" width="25%"> 
+</p>
 ## Known bugs
 
 * ***Trip Planner Colours*** - This is an issue we encountered with deployment. Locally the inputs look as we want them to look - however once deployed, they have changed colour.
-![screenshot](screenshots/Trip_Planner_Bug.png)
+
+<p align=center>
+	<img src="screenshots/Trip_Planner_Bug.png" alt="Trip Planner Bug"> 
+</p>
 
 * ***React Stars*** - When someone posts a rating (with or without a comment) the starts don't reset back to 0. The comment text resets to empty, but we couldnt get the rating to do the same.
-<img src="screenshots/Stars.png" alt="React Stars" width="25%"> 
+
+<p align=center>
+	<img src="screenshots/Stars.png" alt="React Stars" width="25%"> 
+</p>
 
 ## Potential future features
 * ***Posting & Putting Places*** - We decided not to include it at the time but it would be nice for users to be able to add places that are currently not in the database.
