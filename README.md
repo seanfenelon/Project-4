@@ -1,6 +1,7 @@
 
 ## ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) General Assembly, Software Engineering Immersive
-# Project #4: Travel Explorer
+
+# Project 4: Travel Explorer
 
 <p align="center">
   <img src="screenshots/1.png" alt="Home Page"/>
