@@ -375,9 +375,15 @@ This is something that we would have liked to have spent more time on as it is b
 	<img src="screenshots/Stars.png" alt="React Stars" width="25%"> 
 </p>
 
+
+
 ## Potential future features
 * ***Posting & Putting Places*** - We decided not to include it at the time but it would be nice for users to be able to add places that are currently not in the database.
-* ***Ability to organise folders*** - With the time constrainst imposed we were unable to implement this feature. However with a bit more time we would have liked to have given users the option to organise and customise their folders. Eg. by day of trip / preference of activity etc 
+* ***Ability to organise folders*** - With the time constrainst imposed we were unable to implement this feature. However with a bit more time we would have liked to have given users the option to organise and customise their folders. Eg. by day of trip / preference of activity etc. 
+
+## Key Learnings
+Technical aspects aside, managing workload and keeping realistic expectations was a key learning from this project. Although JS gave us a good foundation, we had spent less than two-weeks learning Python prior to this project and initially Theo and I got a little ahead of ourselves in terms of the plan for the project. Ultimately, we managed this and are proud of the result!
+
 ## Images
 * Background image by [Rana Sawalha on Unsplash] (https://unsplash.com/@ranasawalha)
 * Background image by [Dariusz Sankowski
