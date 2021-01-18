@@ -36,18 +36,18 @@ The idea was born out of a mutual love for travel and frustration with the lack 
 
 ## Brief
 ### Requirements
-* **Build a full-stack application** by making your own backend and your own front-end
-* **Use a Python Flask API** using a Flask REST Framework to serve your data from a Postgres database
-* **Consume your API with a separate front-end** built with React
-* **Be a complete product** which most likely means multiple relationships and CRUD functionality for at least a couple of models
-* **Implement thoughtful user stories/wireframes** that are significant enough to help you know which features are core MVP and which you can cut
+* **Build a full-stack application** by making your own backend and your own front-end.
+* **Use a Python Flask API** using a Flask REST Framework to serve your data from a Postgres database.
+* **Consume your API with a separate front-end** built with React.
+* **Be a complete product** which most likely means multiple relationships and CRUD functionality for at least a couple of models.
+* **Implement thoughtful user stories/wireframes** that are significant enough to help you know which features are core MVP and which you can cut.
 * **Have a visually impressive design** to kick your portfolio up a notch and have something to wow future clients & employers. **ALLOW** time for this.
 * **Be deployed online** so it's publicly accessible.
-* **A working app** hosted on the internet
-* **A link to your hosted working app** in the URL section of your Github repo
-* **A git repository hosted on Github**, with a link to your hosted project, and frequent commits dating back to the _very beginning_ of the project
+* **A working app** hosted on the internet.
+* **A link to your hosted working app** in the URL section of your Github repo.
+* **A git repository hosted on Github**, with a link to your hosted project, and frequent commits dating back to the _very beginning_ of the project.
 
-### Suggested Enhancements
+
 ## Approach
 ### Wireframes
 We used a mixture of ziteboard and googledocs to outline what we wanted to achieve. A combination of blueprints and to-do lists:
@@ -111,7 +111,7 @@ From here we concluded the relationships at center of our applicationw were:
 		  db.Column('folder_id', db.Integer, db.ForeignKey('folders.id'), primary_key=True),
 		  db.Column('user_id', db.Integer, db.ForeignKey('users.id'), primary_key=True)
 		  )
-* One-to-One: The comment-user/place relationship
+* One-to-One: The comment-user/place relationship.
 
 		class Comment(db.Model, BaseModel):
 		
